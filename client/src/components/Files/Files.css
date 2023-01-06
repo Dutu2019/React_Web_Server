@@ -1,0 +1,39 @@
+@keyframes slide-in {
+  0% {
+    transform: translateX(-25%);
+    opacity: 0;
+    filter: blur(10px);
+  }
+
+  100% {
+    transform: translateX(0%);
+    opacity: 1;
+    filter: blur(0px);
+  }
+}
+
+.files .title {
+  display: block;
+  color: var(--brighter-color);
+  padding: 2vh 4vw;
+  margin: 0;
+  font-size: 2rem;
+  width: fit-content;
+}
+
+.files .title1 {
+  animation: slide-in 2s ease-in-out both;
+}
+
+.files .title2 {
+  animation: slide-in 2s 2.5s ease-in-out both;
+}
+
+.files input[type="file"] {
+  display: none;
+}
+
+.files .input {
+  padding: 1rem;
+  color: var(--brighter-color)
+}
