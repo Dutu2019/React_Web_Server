@@ -1,0 +1,46 @@
+.movies {
+  color: var(--brighter-color);
+}
+
+.svg {
+  aspect-ratio: 3/1;
+  width: 100%;
+  background-image: url('../../svg/orange.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.rotate {
+  transform: rotate(180deg) translate(0, 1px);
+
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.form input{
+  height: 2.5rem;
+  border-radius: 0.5rem;
+  border-width: 1px;
+  margin: 0.5rem;
+  width: 50vmin;
+}
+
+.movie-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.movie-box {
+  background-image: linear-gradient(to right, rgba(255, 0, 0, 0.9), rgba(104, 104, 255, 0.9));
+  width: 50vmin;
+  padding: 0.5rem;
+  margin: auto;
+  margin-top: 0.5rem;
+  border-radius: 10px;
+}

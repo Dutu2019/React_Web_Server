@@ -1,0 +1,78 @@
+.Navbar2 {
+    position: absolute;
+    left: 50vw;
+    top: 80vh;
+    transform: translateX(-50%);
+    --Navbar2-height: 70px;
+    display: flex;
+    width: fit-content;
+    height: var(--Navbar2-height);
+    background-color: var(--bright-color);
+    border-radius: 10px;
+}
+
+.Navbar2 ul {
+    position: relative;
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+}
+
+.Navbar2 ul li .link {
+    --item-height: 70px;
+
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: var(--item-height);
+    z-index: 1;
+}
+
+.Navbar2 ul li .link .icon {
+    display: block;
+    height: var(--Navbar2-height);
+    font-size: 200%;
+    color: var(--background-color);
+    transition: 0.5s;
+}
+
+.Navbar2 ul li:hover:not(.active) .link .icon {
+    opacity: 0.5;
+}
+
+.Navbar2 ul li.active .link .icon {
+    transform: translateY(-50%);
+}
+
+.Navbar2 ul li .link .text {
+    position: absolute;
+    text-align: center;
+    transition: 0.5s;
+    transform: translateY(125%);
+    opacity: 0;
+    font-size: 1rem;
+    letter-spacing: 0.05rem;
+    color: white;
+}
+
+.Navbar2 ul li.active .link .text {
+    transform: translateY(50%);
+    opacity: 1;
+}
+
+.indicator {
+    position: absolute;
+    box-sizing: border-box;
+    width: var(--Navbar2-height);
+    height: var(--Navbar2-height);
+    background-color: green;
+    border-radius: calc(var(--Navbar2-height)/2);
+    border: 5px solid var(--background-color);
+    transform: translate(calc(var(--index, 0) * 100%), -50%);
+    transition: 0.3s ease-in-out;
+}

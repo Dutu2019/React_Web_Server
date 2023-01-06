@@ -1,0 +1,55 @@
+.login .title {
+    width: fit-content;
+    margin: auto;
+    padding: 10vh;
+    font-size: 3rem;
+    color: var(--brighter-color)
+}
+
+.login .container {
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+    padding: 3rem;
+    margin: auto;
+    background-color: var(--darkest-color);
+    border-radius: 50px;
+}
+
+.login .container label {
+    color: var(--brighter-color);
+    font-size: 1.25rem;
+}
+
+.login .container input {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.25rem;
+    border: 1px solid var(--darkest-color);
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 1rem;
+    background-color: var(--bright-color);
+    transition: 0.2s;
+}
+
+.login .container input:focus {
+    border: 1px solid var(--brightest-color);
+}
+
+.login .container button {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.3rem;
+    background-color: var(--brighter-color);
+    padding: 0.5rem;
+    border-radius: 10px;
+    margin: 1rem 0;
+    transition: 0.5s;
+    user-select: none;
+}
+
+.login .container button:hover {
+    opacity: 0.8;
+    color: var(--brightest-color);
+    cursor: pointer;
+}
+

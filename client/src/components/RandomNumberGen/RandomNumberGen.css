@@ -1,0 +1,26 @@
+.RandomNumberGen {
+  color: var(--brighter-color);
+}
+
+.min,
+.max {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.min input,
+.max input {
+  border: none;
+  outline: none;
+  border-bottom: 2px solid grey;
+  height: 2rem;
+  max-width: 7rem;
+  font-size: large;
+  background-color: var(--background-color);
+}
+
+.min input:focus,
+.max input:focus {
+  border-bottom: 2px solid black;
+}

@@ -1,0 +1,41 @@
+.navbar-box {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+  
+.navbar-item {
+  padding: 1%;
+  border-radius: 0.5rem;
+  user-select: none;
+}
+
+.navbar-item:hover {
+  opacity: 90%;
+}
+
+.navbar-box img {
+  margin-right: 3%;
+  width: 4rem;
+  height: auto;
+}
+
+.logo {
+  -webkit-animation: spin 3s linear infinite;
+  -moz-animation: spin 3s linear infinite;
+  animation: spin 3s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  100%{-webkit-transform: rotate(360deg);}
+}
+
+@-moz-keyframes spin {
+  100%{-webkit-transform: rotate(360deg);}
+}
+
+@keyframes spin {
+  100%{-webkit-transform: rotate(360deg);}
+}

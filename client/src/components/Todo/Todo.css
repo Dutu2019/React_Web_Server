@@ -1,0 +1,35 @@
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+  font-family: sans-serif;
+}
+
+h1 {
+  font-size: 32px;
+  font-weight: bold;
+  color: #333;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+input {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}

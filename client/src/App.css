@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+
+  --darkest-color: #000000;
+  --background-color :#001220;
+  --accent-color: #C62368;
+  --brightest-color: #ffffff;
+  --brighter-color: #4FACF7;
+  --bright-color: #0066FF;
+}
+
+body {
+  background-color: var(--background-color);
+  margin: 0;
+}
+
+.App {
+  position: relative;
+}
+
+a:link, a:hover, a:visited, a:active {
+  color: var(--accent-color);
+  text-decoration: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+input[type=number] {
+  appearance: none;
+  -moz-appearance: textfield;
+}
